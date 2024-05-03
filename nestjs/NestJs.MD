@@ -41,3 +41,19 @@
 * Install `NestJS CLI` globally in your machine. Please use the following command `npm install -g @nestjs/cli`
 * To create NestJS project; please enter following command `nest new <project_name>`
 * To run the project please enter followng commands `cd <project_name>` & `npm run start`
+
+### NestJS Modules
+* Each application has at least one module - the root module. That is the starting point of the application.
+* Modules are an effective wav to organize components b a closely related set of capabilities (e.g. per feature).
+* It is a good practice to have a folder per module, containing the module's components.
+* Modules are singletons, therefore a module can be imported by multiple other modules.
+
+### Defining a module
+* A module is defined by annotating a class with the `@Module` decorator.
+* The decorator provides metadata that Nest uses to organize the application structure.
+
+### @Module Decorator Properties
+* **providers**: Array of providers to be available within the module via dependency injection.
+* **controllers**: Array of controllers to be instantiated within the module.
+* **exports**: Array of providers to export to other modules.
+* **imports**: List of modules required by this module.Any exported provider by these modules will now be available in our module via dependency injection.
