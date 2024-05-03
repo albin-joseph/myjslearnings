@@ -63,9 +63,14 @@
 @Module({
     providers: [ForumService], 
     controllers: [ForumController], 
-    imports: [ PostModule, CommentModule, AuthModule
-    ], exports: [
-    ForumService
+    imports: [ 
+        PostModule, 
+        CommentModule, 
+        AuthModule
+    ], 
+    exports: [
+        ForumService
+    ]
 })
 
 export class ForumModule {} 
