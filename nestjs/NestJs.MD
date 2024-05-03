@@ -57,3 +57,17 @@
 * **controllers**: Array of controllers to be instantiated within the module.
 * **exports**: Array of providers to export to other modules.
 * **imports**: List of modules required by this module.Any exported provider by these modules will now be available in our module via dependency injection.
+
+### Example of a module
+``` 
+@Module({
+    providers: [ForumService], 
+    controllers: [ForumController], 
+    imports: [ PostModule, CommentModule, AuthModule
+    ], exports: [
+    ForumService
+})
+
+export class ForumModule {} 
+
+```
