@@ -126,5 +126,5 @@ export class ForumModule {}
         Step1 --> Decision;
         Decision -->|Yes| Step3;
         Decision -->|No| End;
-        Step3 --> End;ew=>China: Hello
+        Step3 --> End;
     ```
