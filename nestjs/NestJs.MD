@@ -81,3 +81,13 @@ export class ForumModule {}
 - In NestJS, so many commands available to ease the development. To get the details please try the following command `nest g --help`
 
 - To create a module please use the following command `nest g module <module_name>`
+
+### NestS Controllers
+* Responsible for handling incoming requests and returning responses to the client.
+* Bound to a specific path (for example, "/tasks" for the task resource). 
+* Contain handlers, which handle endpoints and request methods(GET, POST, DELETE etc).
+* Can take advantage of dependency injection to consume providers within the same module.
+
+    #### Defining a Controller
+    * Controllers are defined by decorating a class with the @Controller decorator.
+    * The decorator accepts a string, which is the path to be handled by the controller.
