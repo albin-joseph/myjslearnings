@@ -121,7 +121,7 @@ export class ForumModule {}
     ### How the controller is working
   ```mermaid
     flowchart TD;
-        step1[" HTTP request incoming "]
+        step1[" ```HTTP request incoming``` "]
         step2["Request routed to controller"]
         step1 --> step2
     ```
