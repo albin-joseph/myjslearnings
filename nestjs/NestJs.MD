@@ -164,4 +164,8 @@
 * Singleton when wrapped with ```@Injectable ()``` and provided to a module. That means, the same instance will be shared across the application - acting as a single source of truth.
 * The main source of business logic. For example, a service will be called from a controller to validate data, create an item in the database and return a response.
 
+### Dependency Injection in NestJS
+* Any component within the NestS ecosystem can inject a provider that is decorated with the @Injectable.
+* We define the dependencies in the constructor of the class. NestS will take care of the injection for us, and it will then be available as a class property.
+
 
