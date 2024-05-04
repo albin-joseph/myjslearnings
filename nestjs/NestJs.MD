@@ -118,7 +118,8 @@ export class ForumModule {}
      }
 
     ```
-
+    ### How the controller is working
+    
   ```mermaid
     graph TD;
         Start --> Step1;
@@ -129,8 +130,18 @@ export class ForumModule {}
         Step3 --> End;
     ```
 
-START --> Step 1 --> Step 2 --> Decision --> |Yes| Step 3 --> END
-                 Decision --> |No| Step 4 --> END
-
-
+     ┌────────────────────────┐                   
+     │  HTTP Request incoming │                   
+     └────────────┬───────────┘                   
+                  │                               
+                  │                               
+                  ▼                               
+┌────────────────────────────────────────────────┐
+│    Request routed to controller,               │
+│    handler is called with arguments            │
+│                                                │
+│    NestJS will parse the relavent request data │
+│    and it will available in the handler        │
+│                                                │
+└────────────────────────────────────────────────┘
 
