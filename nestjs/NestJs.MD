@@ -79,11 +79,13 @@
     #### A module
    ```mermaid
         flowchart LR;
-            step1["`**Controller**`"]
-            step2["`**Service x**`"]
+            step1["Controller"]
+            step2["Service x"]
             step1 --> step2
-            step3["`**Service y**`"]
+            step3["Service y"]
             step1 --> step3
+            step4["Service z"]
+            step1 --> step4
     ```
 
 ### Helper Commands in NestJS
