@@ -130,7 +130,7 @@ export class ForumModule {}
             step1 --> step2
             step3["`**Handler handles the request**
             _perform  operations such as communication with a service.
-            For example, retrieving from an item from the database.
+            For example, retrieving from an item from the database._
             `"]
             step2 --> step3
     ```
