@@ -48,34 +48,34 @@
 * It is a good practice to have a folder per module, containing the module's components.
 * Modules are singletons, therefore a module can be imported by multiple other modules.
 
-### Defining a module
-* A module is defined by annotating a class with the `@Module` decorator.
-* The decorator provides metadata that Nest uses to organize the application structure.
+    #### Defining a module
+    * A module is defined by annotating a class with the `@Module` decorator.
+    * The decorator provides metadata that Nest uses to organize the application structure.
 
-### @Module Decorator Properties
-* **providers**: Array of providers to be available within the module via dependency injection.
-* **controllers**: Array of controllers to be instantiated within the module.
-* **exports**: Array of providers to export to other modules.
-* **imports**: List of modules required by this module.Any exported provider by these modules will now be available in our module via dependency injection.
+    #### @Module Decorator Properties
+    * **providers**: Array of providers to be available within the module via dependency injection.
+    * **controllers**: Array of controllers to be instantiated within the module.
+    * **exports**: Array of providers to export to other modules.
+    * **imports**: List of modules required by this module.Any exported provider by these modules will now be available in our module via dependency injection.
 
-### Example of a module
-``` js
-@Module({
-    providers: [ForumService], 
-    controllers: [ForumController], 
-    imports: [ 
-        PostModule, 
-        CommentModule, 
-        AuthModule
-    ], 
-    exports: [
-        ForumService
-    ]
-})
+    #### Example of a module
+    ``` js
+    @Module({
+        providers: [ForumService], 
+        controllers: [ForumController], 
+        imports: [ 
+            PostModule, 
+            CommentModule, 
+            AuthModule
+        ], 
+        exports: [
+            ForumService
+        ]
+    })
 
-export class ForumModule {} 
+    export class ForumModule {} 
 
-```
+    ```
 
 ### Helper Commands in NestJS
 - In NestJS, so many commands available to ease the development. To get the details please try the following command `nest g --help`
@@ -146,10 +146,9 @@ export class ForumModule {}
 *  Can be exported from a module - and then be available to other modules that import it.
 
 ### What is a Service?
-* Defined as providers. Not all providers are services.
+* Defined as providers. **Not all providers are services.**
 * Common concept within software development and are not exclusive NestJS, JavaScript or back-end development.
-* Singleton when wrapped with @Injectable () and provided to a module. That means, the same instance will be shared across the application - acting as a single source of truth.
+* Singleton when wrapped with ```@Injectable ()``` and provided to a module. That means, the same instance will be shared across the application - acting as a single source of truth.
 * The main source of business logic. For example, a service will be called from a controller to validate data, create an item in the database and return a response.
-
 
 
