@@ -139,6 +139,11 @@ export class ForumModule {}
             `"]
             step3 --> step4
     ```
+### NestJS Providers
+* Can be injected into constructors if decorated as an ```@Injectable```, via **dependency injection**.
+* Can be a plain value, a class, sync/async factory etc.
+* Providers must be provided to a module for them to be usable.
+*  Can be exported from a module - and then be available to other modules that import it.
 
 
 
