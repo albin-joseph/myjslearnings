@@ -76,6 +76,8 @@
     export class ForumModule {} 
 
     ```
+    #### A module
+    
     ```mermaide
         flowCchart LR;
             subgraph Module
