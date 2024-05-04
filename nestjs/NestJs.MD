@@ -76,6 +76,18 @@
     export class ForumModule {} 
 
     ```
+    ```mermaide
+        flowCchart LR;
+            subgraph Module
+            step1["Controller"]
+            step2["Service X]
+            step3["Service Y]
+            step4["Service Z"]
+            step1 --> step2
+            step1 --> step3
+            step1 --> step4
+
+    ```
 
 ### Helper Commands in NestJS
 - In NestJS, so many commands available to ease the development. To get the details please try the following command `nest g --help`
