@@ -128,3 +128,19 @@ export class ForumModule {}
         Decision -->|No| End;
         Step3 --> End;
     ```
+
+    ## My Process Flowchart
+
+```plantuml
+@startuml
+start
+:Step 1;
+:Step 2;
+if (Decision?) then (yes)
+  :Step 3;
+else (no)
+  :Step 4;
+endif
+stop
+@enduml
+
