@@ -79,7 +79,7 @@
     #### A module
    ```mermaid
         flowchart LR;
-            subgraph one
+            subgraph Module LR
             step1["Controller"]
             step2["Service x"]
             step1 --> step2
