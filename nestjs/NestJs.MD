@@ -94,6 +94,8 @@
 - In NestJS, so many commands available to ease the development. To get the details please try the following command `nest g --help`
 
 - To create a module please use the following command `nest g module <module_name>`
+- To create a controller please use the following command `nest g controller <controller_name>` or `nest g controller <controller_name> --no-spec`
+- To create a service please use the following command `nest g service <service_name>` or `nest g service <service_name> --no-spec`
 
 ### NestS Controllers
 * Responsible for handling incoming requests and returning responses to the client.
