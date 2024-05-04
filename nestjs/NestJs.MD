@@ -122,12 +122,12 @@ export class ForumModule {}
     ```mermaid
         flowchart TD;
             step1["`**HTTP request incoming**`"]
-            step2["`**Request routed to controller,
-            hadler called with arguments**
-            _NestJS will parse the relevant request data and it will be available in the handler_
+            step2["`**Request routed to ```controller```,
+            ```hadler``` called with arguments**
+            _NestJS will parse the relevant request data and it will be available in the ```handler```_
             `"]
             step1 --> step2
-            step3["`**HAndler handles the request**`"]
+            step3["`**```Handler``` handles the request**`"]
             step2 --> step3
     ```
 
