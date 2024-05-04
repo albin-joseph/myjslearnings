@@ -130,17 +130,7 @@ export class ForumModule {}
     ```
 
     ## My Process Flowchart
+START --> Step 1 --> Step 2 --> Decision --> |Yes| Step 3 --> END
+                 Decision --> |No| Step 4 --> END
 
-```plantuml
-@startuml
-start
-:Step 1;
-:Step 2;
-if (Decision?) then (yes)
-  :Step 3;
-else (no)
-  :Step 4;
-endif
-stop
-@enduml
 
