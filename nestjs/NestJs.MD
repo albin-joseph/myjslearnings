@@ -76,3 +76,8 @@
 export class ForumModule {} 
 
 ```
+
+### Helper Commands in NestJS
+- In NestJS, so many commands available to ease the development. To get the details please try the following command `nest g --help`
+
+- To create a module please use the following command `nest g module <module_name>`
