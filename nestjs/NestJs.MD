@@ -133,10 +133,10 @@ export class ForumModule {}
             For example, retrieving from an item from the database._
             `"]
             step2 --> step3
-            step4(["`**Handler returns response value**
+            step4>["`**Handler returns response value**
             _Response can be of any type and even an exception.
             Nest will wrap the returned value as an HTTP response and return it to the client._
-            `"])
+            `"]
             step3 --> step4
     ```
 
