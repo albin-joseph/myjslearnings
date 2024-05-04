@@ -79,7 +79,6 @@
     #### A module
    ```mermaid
         flowchart LR;
-            subgraph Module
             step1["Controller"]
             step2["Service x"]
             step1 --> step2
@@ -87,6 +86,7 @@
             step1 --> step3
             step4["Service z"]
             step1 --> step4
+            subgraph Module
     ```
 
 ### Helper Commands in NestJS
