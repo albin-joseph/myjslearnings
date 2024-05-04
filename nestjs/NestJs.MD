@@ -120,7 +120,7 @@ export class ForumModule {}
     ```
     ### How the controller is working
   ```mermaid
-    flowchart LR;
+    flowchart TD;
         Start --> Step1;
         Step1 --> Step2;
         Step1 --> Decision;
