@@ -145,5 +145,11 @@ export class ForumModule {}
 * Providers must be provided to a module for them to be usable.
 *  Can be exported from a module - and then be available to other modules that import it.
 
+### What is a Service?
+* Defined as providers. Not all providers are services.
+* Common concept within software development and are not exclusive NestJS, JavaScript or back-end development.
+* Singleton when wrapped with @Injectable () and provided to a module. That means, the same instance will be shared across the application - acting as a single source of truth.
+* The main source of business logic. For example, a service will be called from a controller to validate data, create an item in the database and return a response.
+
 
 
