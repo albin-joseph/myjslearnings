@@ -121,12 +121,9 @@ export class ForumModule {}
     ### How the controller is working
   ```mermaid
     flowchart TD;
-        Start --> Step1;
-        Step1 --> Step2;
-        Step1 --> Decision;
-        Decision -->|Yes| Step3;
-        Decision -->|No| End;
-        Step3 --> End;
+        step1[" HTTP request incoming "]
+        step2["Request routed to controller"]
+        step1 --> step2
     ```
 
 
