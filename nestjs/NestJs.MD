@@ -127,7 +127,7 @@ export class ForumModule {}
             _NestJS will parse the relevant request data and it will be available in the handler_
             `"]
             step1 --> step2
-        ```
+    ```
 
 
 
