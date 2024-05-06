@@ -1,8 +1,4 @@
-# TASK Managemnt Application
-### This application includes following features
-* Create Task
-* Update Task
-* Delete Task
+# About NestJS
 
 ### objectives: Back-end & Architecture
 * Develop production-ready REST APIS

@@ -22,6 +22,13 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## Overview
+
+### This application includes following features
+* Create Task
+* Update Task
+* Delete Task
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
