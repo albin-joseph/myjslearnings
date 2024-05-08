@@ -14,15 +14,17 @@ export class TaskRepository extends Repository<Task> {
         super(taskRepository.target, taskRepository.manager, taskRepository.queryRunner)
     }
 
-    async getTasks(filterDto: GetTasksFilterDto): Promise<Task[]> {
+    async getTasks(filterDto: GetTasksFilterDto, user: User): Promise<Task[]> {
         const {status, search} = filterDto;
         const query = this.createQueryBuilder('task');
+        query.where({user});
         if(status) {
             query.andWhere('task.status = :status', { status })
         }
         if(search) {
             query.andWhere(
-                'task.title LIKE LOWER(:search) OR task.description LIKE LOWER(:search)',
+                //Wrap entire query for it behave entire as a single query. Other wise in search condition it may show some errors
+                '(LOWER(task.title) LIKE LOWER(:search) OR LOWER(task.description) LIKE LOWER(:search))',
                 {search: `%${search}%`}
             )
         }
