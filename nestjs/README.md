@@ -257,3 +257,13 @@
     * Easier to maintain and expand. If the shape of the data changes, it is easy to make the necessary changes within the pipe only.
     * Responsibility of identifying the arguments to process is shifted to one central file - the pipe file.
     * Promote usage of DTOs (Data Transfer Objects) which is a very good practice.
+
+### Logging
+
+#### Types of Logs
+
+* **Log** - General purpose logging of important information.
+* **Warning** - Unhandled issue that is NOT fatal or destructive.
+* **Error** - Unhandled issue that is fatal or destructive.
+* **Debug** - Useful information that can help us debug the logic in case of an error/warning. Intended for developers.
+* **Verbose** - Information providing insights about the behavior of the application. Intended for operators (for example, support). Usually "too much information'
