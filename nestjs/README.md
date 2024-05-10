@@ -312,6 +312,16 @@
 * It is useful for front-end applications to use these tokens to toggle features conditionally. For example, if a user is an administrator, we could show or hide a certain button based on the claims in the token.
 * Finally - JWTs should ideally be short-lived.
 
+    #### JWT Structure
+    ``` js
+    eyJhbGci0ijIUZI1NiIsIn5cCI6IkpxVCJ9.eyJzdWIiOiIxMjMONTY30DK wIiwibmFtZSI6IkpvaG4gRG91IiwiaWFOIjoxNTE2MjM5MDIyfQ.sf1KxwRJ
+    SMeKKF2QT4fwpMeJf36P0k6yJV_adQssw5c
+
+    ```
+    * **Header** contains metadata about the token (type, hashing algorithm etc).
+    * **Payload** contains claims (statements about an entity - for example, a user) and additional data.
+    * **Signature** is the result of the encoded header, the encoded payload, signed against a secret.
+
 ### Logging
 
 #### Types of Logs
