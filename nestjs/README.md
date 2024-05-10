@@ -287,13 +287,13 @@
 
     *TypEORM:*
 
-    ```
+    ``` js
         const tasks = await Task. find({ status: 'DONE', user: 'Ashley' });
         
     ```
 
     *Pure JavaScript:*
-    ```
+    ``` js
         let tasks;
         db. query SELECT * FROM tasks WHERE status = "DONE" AND user = "Ashley", (err, result) => {
         if (err) {
