@@ -276,6 +276,33 @@
     - Performance is alright, but it's easy to neglect.
     - Makes it easy to forget (or never learn) what's happening behind the scenes, which can lead to a variety of maintainability issues.
 
+    #### TypeORM
+    * TypeORM is an ORM library that can run in Node.is and be used with TypeScript (or JavaScript).
+    * Helps us define and manage entities, repositories, columns, relations, replication, indices, queries, logging and so much more.
+    nest
+
+    **Example**
+
+    Retrieving all tasks owned by "Ashley" and are of status "Done"
+
+    *TypEORM:*
+
+    ```
+        const tasks = await Task. find({ status: 'DONE', user: 'Ashley' });
+        
+    ```
+
+    *Pure JavaScript:*
+    ```
+        let tasks;
+        db. query SELECT * FROM tasks WHERE status = "DONE" AND user = "Ashley", (err, result) => {
+        if (err) {
+            throw new Error 'Could not retrieve tasks!');
+            tasks = result.rows;
+        });
+
+    ```
+
 ### Logging
 
 #### Types of Logs
