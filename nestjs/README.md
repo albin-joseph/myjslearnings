@@ -346,3 +346,4 @@
     *Non-sensitive information such as the port to run the application on, will be defined in the code base.*
 
 * Sensitive information such as database username and password for production mode, will be provided via environment variables upon running the application.
+
