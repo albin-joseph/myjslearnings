@@ -59,7 +59,7 @@
             subgraph Structure of a Module
             step1["Module"]
             step2["Providers"]
-            step1 --> step2
+            step1 --> | Array of Providers | step2
             step3["Controllers"]
              step1 --> step3
             step4["Exports"]
