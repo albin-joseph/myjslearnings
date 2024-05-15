@@ -54,6 +54,18 @@
     * **exports**: Array of providers to export to other modules.
     * **imports**: List of modules required by this module.Any exported provider by these modules will now be available in our module via dependency injection.
 
+    ``` mermaid
+        flowchart LR;
+            subgraph Decorator Properties of a Module
+            step1["Providers"]
+            step2["Controllers"]
+            step3["Exports"]
+            step4["Imports"]
+            end
+        
+
+    ```
+
     #### Example of a module
     ``` js
     @Module({
