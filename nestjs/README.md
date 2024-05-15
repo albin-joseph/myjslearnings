@@ -61,11 +61,11 @@
             step2["Providers"]
             step1 --> | Array of Providers | step2
             step3["Controllers"]
-             step1 --> step3
+             step1 --> | Array of Controllers | step3
             step4["Exports"]
-             step1 --> step4
+             step1 --> | Array of Providers | step4
             step5["Imports"]
-             step1 --> step5
+             step1 --> | Array of Modules | step5
             end
         
 
