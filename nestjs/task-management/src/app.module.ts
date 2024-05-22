@@ -23,7 +23,7 @@ import { configValidationSchema } from './config.schema';
           port:configService.get('DB_PORT'),
           username: configService.get('DB_USERNAME'),
           password: configService.get('DB_PASSWORD'),
-          database: configService.get('DB_'),
+          database: configService.get('DB_DATABASE'),
           autoLoadEntities: true,
           synchronize: true
         }
