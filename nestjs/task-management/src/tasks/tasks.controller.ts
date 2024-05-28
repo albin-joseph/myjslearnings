@@ -38,6 +38,7 @@ export class TasksController {
         return this.taskService.deleteTask(id, user)
     }
 
+    
     @Patch('/:id/status')
     updateTaskStatus(@Param('id') id: string, @Body() updateTaskStatusDto: UpdateTaskStatusDto, @GetUser() user: User): Promise<Task> {
         return this.taskService.updateTaskStatus(id,updateTaskStatusDto, user)
