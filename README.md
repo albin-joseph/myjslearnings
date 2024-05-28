@@ -6,6 +6,7 @@ In this repo includes JS sample code for beginers
 * <a name="anchor"><a href="https://github.com/albin-joseph/myjslearnings/tree/master/ReactNative/rnQuickStart">ReactNative QuickStart</a>
 * <a name="anchor"><a href="https://github.com/albin-joseph/myjslearnings/tree/master/nestjs">NestJS [Task Management App]</a>
 * NestJS [School Management]
+* <a name="anchor"><a href="https://github.com/albin-joseph/myjslearnings/tree/master/nestjs/multi-tenant-app">NestJS [Multi Tenent App]</a>
 * NodeJS Express
 * ReactJS Navigation Demo
 
