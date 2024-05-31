@@ -16,8 +16,9 @@ export class AuthController {
     }
 
     @Post('/signin')
-    SignIn(@Body() authCredentialsDto: AuthCredentialsDto): Promise<{accessToken: string}> {
-        return this.authService.signIn(authCredentialsDto)
+    SignIn(@Body() authCredentialsDto: AuthCredentialsDto, @Req() request: Request): Promise<{accessToken: string}> {
+        const dataSource: DataSource =  request['tenantConnection']
+        return this.authService.signIn(authCredentialsDto, dataSource)
     }
 
     @Post('/test')
