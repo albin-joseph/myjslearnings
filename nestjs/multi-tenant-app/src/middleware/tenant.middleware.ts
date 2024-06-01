@@ -5,6 +5,7 @@ import { DataSource } from 'typeorm';
 import { createTenantOrmConfig } from '../config/tenant-ormconfig';
 import { Tenant } from 'src/entities/tenant.entity';
 
+//From this middleware Routing is happening
 @Injectable()
 export class TenantMiddleware implements NestMiddleware {
   private connectionMap: Map<string, DataSource> = new Map();
