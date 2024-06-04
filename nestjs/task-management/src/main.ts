@@ -3,7 +3,6 @@ import { AppModule } from './app.module';
 import { Logger, ValidationPipe } from '@nestjs/common';
 import { TransformInterceptor } from './transform.interceptor';
 
-
 async function bootstrap() {
   const logger = new Logger()
   const app = await NestFactory.create(AppModule);
