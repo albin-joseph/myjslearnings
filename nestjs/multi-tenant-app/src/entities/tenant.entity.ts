@@ -14,3 +14,4 @@ export class Tenant {
   @Column()
   database: string;
 }
+
