@@ -14,6 +14,12 @@ const icecreamSlice = createSlice({
         restocked: (state, action) => {
             state.numOfIcecream += action.payload
         }
+    },
+    extraReducers: builder => {
+        builder.addCase('cake/ordered', (state) => {
+            console.log('extra reducer works')
+            state.numOfIcecream--
+        })
     }
 })
 
