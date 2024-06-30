@@ -11,6 +11,7 @@
   "description": "",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
+    "axios": "^1.7.2",
     "react-redux": "^9.1.2",
     "redux-logger": "^3.0.6"
   }
